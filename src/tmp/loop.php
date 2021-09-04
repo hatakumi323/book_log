@@ -1,7 +1,10 @@
 <?php
 
-$i = 0;
-while ($i <= 50) {
-  echo $i . PHP_EOL;
-  $i += 10;
+$currencies = [
+  'japan' => 'yen',
+  'us' => 'dollar',
+  'england' => 'pound',
+];
+foreach ($currencies as $country => $currency) {
+  echo $country . ':' . $currency . PHP_EOL;
 }
